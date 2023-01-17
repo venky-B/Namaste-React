@@ -1,11 +1,16 @@
-// Creating a nested element using React.createElement(h1,h2,h3 inside a div class "title")
+# Code Assignment 
+
+## 1. Create a Nested header Element using React.createElement (h1,h2,h3 inside a div with class “title”)
+```
 const header1 = React.createElement("div", { className: "title" }, [
   React.createElement("h1", { className: "line1" }, "h1"),
   React.createElement("h2", { className: "line2" }, "h2"),
   React.createElement("h3", { className: "line3" }, "h3"),
 ]);
+```
 
-//Creating the same element using JSX(also know as react element)
+## 2. Creating the same element using JSX (also know as react element)
+```
 const header2 = (
   <div id="title" key="div">
     <h1 className="line1" key="h1k">
@@ -19,8 +24,11 @@ const header2 = (
     </h2>
   </div>
 );
+```
 
-//Create a functional component of the same with JSX
+
+## 3. Create a functional component of the same with JSX
+```
 const Header3 = () => {
   return (
     <div id="title" key="div">
@@ -30,8 +38,10 @@ const Header3 = () => {
     </div>
   );
 };
+```
 
-//pass the attribute into the tag in JSX
+## 4. pass the attribute into the tag in JSX
+```
 const Header4 = () => {
   return (
     <div id="title" key="div">
@@ -47,8 +57,10 @@ const Header4 = () => {
     </div>
   );
 };
+```
 
-//function component
+## 5. function component
+```
 const Header5 = () => {
   return (
     <div id="title" key="div">
@@ -61,8 +73,10 @@ const Header5 = () => {
     </div>
   );
 };
+```
 
-//component composition(add component inside another component)
+## 6. component composition(add component inside another component)
+```
 const Header6 = () => {
   return (
     <>
@@ -73,3 +87,4 @@ const Header6 = () => {
     </>
   );
 };
+```
