@@ -1,10 +1,11 @@
-## Session 4 of Namaste React course:
+# Session 5 of Namaste React course:
 
-### Topics covered in this session:
+## Topics covered in this session:
 
-- Creating our first app
-- React Fragment
-- props
-- Config driven UI
-- Virtual DOM
-- React reconciliation
+- Hooks (usestate)
+- Exports and Imports (Default and Named)
+- Creating folder structure
+- implemented search functionality to the app(foodvilla)
+- Components
+
+
