@@ -1,5 +1,13 @@
 function Shimmer() {
-  return <h1>Loading Ui....</h1>;
+  return (
+    <div className="restaurant-list">
+      {Array(15)
+        .fill("")
+        .map((e) => (
+          <div className="shimmer-card"></div>
+        ))}
+    </div>
+  );
 }
 
 export default Shimmer;

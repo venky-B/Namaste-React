@@ -31,10 +31,11 @@ const Body = () => {
   //not rendering component (early return)
   if (!allRestaurants) return null;
 
-  if (filteredRestaurants.length === 0) return <h1>Item Not Found.</h1>;
-
+  console.log("render");
   return allRestaurants?.length === 0 ? (
     <Shimmer />
+  ) : filteredRestaurants.length === 0 ? (
+    <h1>Item Not Found.</h1>
   ) : (
     <>
       <div className="search-container">
@@ -65,7 +66,6 @@ const Body = () => {
             <RestrauantCard {...restaurant.data} key={restaurant.data.id} />
           );
         })}
-        ;
       </div>
     </>
   );

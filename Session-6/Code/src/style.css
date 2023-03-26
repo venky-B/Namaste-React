@@ -32,6 +32,13 @@
 
 .restaurant-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+}
+
+.shimmer-card {
+  background-color: rgb(228, 228, 228);
+  width: 200px;
+  height: 300px;
+  padding: 5px;
+  margin: 10px;
 }
